@@ -19,5 +19,8 @@ Windows 8 had a lot of potential. It is reminiscent of a window manager like i3 
 ## Build
 Simply run `make`, which will compile the program into an executable `main`. To run, type `./main`.
 
+## Contributing
+Want to contribute? If you don't know how to code, please add an issue. If you do, please add a pull request.
+
 ## About
 Ancient Straits (email: ancientstraits@protonmail.com)
