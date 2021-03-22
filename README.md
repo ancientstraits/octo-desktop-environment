@@ -15,3 +15,9 @@ Windows 8 had a lot of potential. It is reminiscent of a window manager like i3 
 - Add icons in app tiles
 - Tiling functionality
 - Make search panel that can search files, apps, and settings
+
+# Build
+Simply run `make`, which will compile the program into an executable `main`. To run, type `./main`
+
+# About
+Ancient Straits (email: ancientstraits@protonmail.com)
