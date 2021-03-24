@@ -15,9 +15,10 @@ Windows 8 had a lot of potential. It is reminiscent of a window manager like i3 
 - Add icons in app tiles
 - Tiling functionality
 - Make search panel that can search files, apps, and settings
+- Make Octo independent from `octo.xml`
 
 ## Build
-Simply run `make`, which will compile the program into an executable `main`. To run, type `./main`.
+Simply run `./build.sh`, which will compile the program into an executable `octo`. To run, type `./octo`. The file cannot be moved, since it relies on the location of `octo.xml`, currently.
 
 ## Contributing
 Want to contribute? If you don't know how to code, please add an issue. If you do, please add a pull request.
