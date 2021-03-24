@@ -1,7 +1,7 @@
 #!/bin/bash
 
 octo_build () {
-	meson compile -C build
+	ninja -C build
 	cp build/src/octo ./octo
 	cp build/compile_commands.json ./compile_commands.json
 }
