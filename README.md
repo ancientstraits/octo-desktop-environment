@@ -24,9 +24,9 @@ After `git clone`-ing this repo and `cd`-ing into it, simply run `sudo make clea
 Want to contribute? If you don't know how to code, please add an issue. If you do, please add a pull request.
 
 ## Directory Structure
-**src**: contains C source files (`*.c`)
-**include**: contains C header files (`*.h`)
-**ui**: contains GtkBuilder file (`octo.xml`)
+- **src**: contains C source files (`*.c`)
+- **include**: contains C header files (`*.h`)
+- **ui**: contains GtkBuilder file (`octo.xml`)
 
 ## About
 Ancient Straits (email: ancientstraits@protonmail.com)
