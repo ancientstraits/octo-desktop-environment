@@ -16,10 +16,14 @@ int main(int argc, char *argv[]) {
 
 	builder = gtk_builder_new();
 	if (gtk_builder_add_from_file(builder, "ui/octo.xml", &error) == 0) {
+		if (gtk_builder_add_from_file(builder, "/usr/share/octo/octo.xml", error))
+		{
 		g_printerr("Error loading file: %s\n", error->message);
 		g_clear_error(&error);
 		return 1;
-	}
+		
+			
+	}}
 
 	window = gtk_builder_get_object(builder, "window");
 	gtk_window_set_title(GTK_WINDOW(window), "Octo");

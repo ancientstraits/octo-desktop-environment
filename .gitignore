@@ -7,3 +7,4 @@ octo.xml~
 button
 build
 octo
+obj/*.o

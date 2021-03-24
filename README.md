@@ -18,7 +18,7 @@ Windows 8 had a lot of potential. It is reminiscent of a window manager like i3 
 - Make Octo independent from `octo.xml`
 
 ## Build
-Simply run `./build.sh`, which will compile the program into an executable `octo`. To run, type `./octo`. The file cannot be moved, since it relies on the location of `octo.xml`, currently.
+After `git clone`-ing this repo and `cd`-ing into it, simply run `sudo make clean install` to compile and install octo. To compile octo without installing it, run `make clean` instead.
 
 ## Contributing
 Want to contribute? If you don't know how to code, please add an issue. If you do, please add a pull request.
