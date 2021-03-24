@@ -1,23 +1,21 @@
+#include <gio/gio.h>
+#include <gtk/gtk.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <gtk/gtk.h>
-#include <gio/gio.h>
 #include <string.h>
 
 #include <function.h>
 
-
 #include <gtk_function.h>
 
-
-int main(int argc, char *argv[]){
+int main(int argc, char *argv[]) {
 	GtkWidget *window, *button, *fixed, *fixed2, *scroll, *view, *img;
 	GtkBuilder *builder;
 	GError *error = NULL;
 	gtk_init(&argc, &argv);
 
 	builder = gtk_builder_new();
-	if(gtk_builder_add_from_file(builder, "ui/octo.xml", &error) == 0){
+	if (gtk_builder_add_from_file(builder, "ui/octo.xml", &error) == 0) {
 		g_printerr("Error loading file: %s\n", error->message);
 		g_clear_error(&error);
 		return 1;
@@ -39,15 +37,20 @@ int main(int argc, char *argv[]){
 		char buffer[11];
 		substr(buffer, sizeof(buffer), name_data, 10);
 
-		button = gtk_button_new_with_label(buffer);		
+		button = gtk_button_new_with_label(buffer);
 		gtk_widget_set_size_request(button, 150, 150);
 		gtk_widget_set_opacity(button, .625);
 		GAppInfo *cool = l->data;
 		g_signal_connect(button, "clicked", G_CALLBACK(execute), cool);
 		gtk_fixed_put(GTK_FIXED(fixed2), button, x, y);
-		if(y==510){y=30;x=x+160;}else{y=y+160;}
+		if (y == 510) {
+			y = 30;
+			x = x + 160;
+		} else {
+			y = y + 160;
+		}
 	}
-	gtk_widget_show_all(window);	
+	gtk_widget_show_all(window);
 	g_signal_connect(window, "destroy", G_CALLBACK(gtk_main_quit), NULL);
 	gtk_main();
 

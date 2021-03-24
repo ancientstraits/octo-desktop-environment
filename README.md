@@ -1,4 +1,4 @@
-# The Octo Desktop Environment
+#The Octo Desktop Environment
 ![Screenshot](.screenshot.png)
 
 ## Purpose
