@@ -4,20 +4,20 @@
 #include <gio/gio.h>
 #include <string.h>
 
-#include "function.h"
+#include <function.h>
 
 
-#include "gtk_function.h"
+#include <gtk_function.h>
 
 
 int main(int argc, char *argv[]){
-	GtkWidget *window, *button, *fixed, *fixed2, *scroll, *background, *view, *img;
+	GtkWidget *window, *button, *fixed, *fixed2, *scroll, *view, *img;
 	GtkBuilder *builder;
 	GError *error = NULL;
 	gtk_init(&argc, &argv);
 
 	builder = gtk_builder_new();
-	if(gtk_builder_add_from_file(builder, "octo.xml", &error) == 0){
+	if(gtk_builder_add_from_file(builder, "ui/octo.xml", &error) == 0){
 		g_printerr("Error loading file: %s\n", error->message);
 		g_clear_error(&error);
 		return 1;

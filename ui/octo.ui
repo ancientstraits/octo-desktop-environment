@@ -10,11 +10,11 @@
         <property name="can-focus">False</property>
         <child>
           <object class="GtkImage" id="background">
-            <property name="width-request">1229</property>
-            <property name="height-request">768</property>
+            <!--property name="width-request">1366</property>
+            <property name="height-request">768</property-->
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="pixbuf">octo-1366x768.png</property>
+            <property name="pixbuf">background.png</property>
           </object>
         </child>
         <child>

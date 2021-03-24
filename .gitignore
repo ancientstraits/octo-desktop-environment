@@ -1,7 +1,8 @@
-/*.o
-/.cache
-/button
-/main
-/octo.xml~
-/old_program
-/program
+*.o
+.cache
+button
+main
+octo.xml~
+*program
+button
+build
