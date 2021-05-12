@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.38.2 -->
 <interface>
   <requires lib="gtk+" version="3.24"/>
   <object class="GtkWindow" id="window">
@@ -10,8 +9,6 @@
         <property name="can-focus">False</property>
         <child>
           <object class="GtkImage" id="background">
-            <!--property name="width-request">1366</property>
-            <property name="height-request">768</property-->
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="pixbuf">background.png</property>
