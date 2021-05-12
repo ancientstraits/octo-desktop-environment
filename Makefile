@@ -12,7 +12,7 @@ SOURCES := $(wildcard $(SRC)/*.c)
 OBJECTS := $(patsubst $(SRC)/%.c, $(OBJ)/%.o, $(SOURCES))
 
 all: $(OBJECTS)
-	bear -- $(CC) $(CFLAGS) $^ -o $(PROJECT) $(LIBS)
+	$(CC) $(CFLAGS) $^ -o $(PROJECT) $(LIBS)
 
 $(OBJ)/%.o: $(SRC)/%.c $(wildcard$(INCDIR)/*.h)
 	$(CC) $(CFLAGS) -c $< -o $@
