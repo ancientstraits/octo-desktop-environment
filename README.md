@@ -2,7 +2,7 @@
 ![Screenshot](.screenshot.png)
 
 ## Purpose
-The Octo Desktop Environment aims to be an open-source implementation of Windows 8/8.1's interface.
+The Octo Desktop Environment aims to be a GTK-based and Windows 8-like interface for X11.
 **CAUTION: THIS PROJECT IS IN VERY EARLY DEVELOPMENT. IT IS NOT EVEN A DESKTOP ENVIRONMENT YET, IT IS JUST A VERY PRIMITIVE APP LAUNCHER.**
 
 ### Why copy a failed operating system?
@@ -12,13 +12,13 @@ Windows 8 had a lot of potential. It is reminiscent of a window manager like i3 
 - [X] Launch applications
 - [X] Look for applications
 - [X] Fullscreen and scrollable window
+- [ ] Make Octo independent from `octo.xml`
 - [ ] Add draggable app tiles
 - [ ] Add resizeable app tiles
 - [ ] Add search function
 - [ ] Add icons in app tiles
 - [ ] Tiling functionality
 - [ ] Make search panel that can search files, apps, and settings
-- [ ] Make Octo independent from `octo.xml`
 - [ ] Sort app order alphabetically
 
 ## Build
