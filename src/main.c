@@ -5,7 +5,6 @@
 #include <string.h>
 
 #include <function.h>
-
 #include <gtk_function.h>
 
 int main(int argc, char *argv[]) {
